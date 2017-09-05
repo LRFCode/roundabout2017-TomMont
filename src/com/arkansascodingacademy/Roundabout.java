@@ -54,6 +54,8 @@ public class Roundabout
     {
         dice.roll();
 
+        System.out.println(currentPlayer.getName() + " rolled " + dice.getFirstValue() + " and " + dice.getSecondValue());
+
         if (playerShouldMove())
         {
             currentPlayer.moveForward();
